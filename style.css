@@ -193,18 +193,29 @@ body::after {
   text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7);
 }
 
+/* Tablet view */
 @media (max-width: 768px) {
-  /* Tablet and mobile adjustments */
-  body {
+  .section {
+    padding: 20px;
+    margin: 10px;
+  }
+  .header-title {
+    font-size: 1.8rem;
+  }
+}
+
+/* Mobile view */
+@media (max-width: 480px) {
+  .section {
     padding: 10px;
+    margin: 5px;
   }
-
-  .header {
-    font-size: 1.5rem;
+  .header-title {
+    font-size: 1.4rem;
   }
-
-  .yagam-video-section {
-    grid-template-columns: 1fr; /* Single column for small screens */
+  .your-images {
+    max-width: 100%;
+    height: auto;
   }
 }
 
